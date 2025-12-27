@@ -1,7 +1,7 @@
 ﻿using InventoryManagement.Api.Dtos.Categories;
 using InventoryManagement.Api.Models;
 
-namespace InventoryManagement.Api.Interfaces;
+namespace InventoryManagement.Api.Services.Interfaces;
 
 public interface ICategoryService
 {

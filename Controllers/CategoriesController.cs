@@ -1,5 +1,5 @@
 ﻿using InventoryManagement.Api.Dtos.Categories;
-using InventoryManagement.Api.Interfaces;
+using InventoryManagement.Api.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InventoryManagement.Api.Controllers

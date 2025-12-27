@@ -1,5 +1,5 @@
 ﻿using InventoryManagement.Api.Dtos.Products;
-namespace InventoryManagement.Api.Interfaces;
+namespace InventoryManagement.Api.Services.Interfaces;
 
 public interface IProductService
 {

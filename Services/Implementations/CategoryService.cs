@@ -1,7 +1,7 @@
 ﻿using InventoryManagement.Api.Data;
 using InventoryManagement.Api.Dtos.Categories;
-using InventoryManagement.Api.Interfaces;
 using InventoryManagement.Api.Models;
+using InventoryManagement.Api.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 public class CategoryService : ICategoryService
