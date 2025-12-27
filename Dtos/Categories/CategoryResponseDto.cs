@@ -1,11 +1,8 @@
-﻿namespace InventoryManagement.Api.Dtos.Categories
+﻿namespace InventoryManagement.Api.Dtos.Categories;
+
+public class CategoryResponseDto
 {
-    public class CategoryResponseDto
-    {
-        public int Id { get; set; }
-
-        public string Name { get; set; } = string.Empty;
-
-        public string? Description { get; set; }
-    }
+    public int Id { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public string? Description { get; set; }
 }

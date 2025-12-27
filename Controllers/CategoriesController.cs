@@ -17,7 +17,7 @@ namespace InventoryManagement.Api.Controllers
 
         // POST: api/categories
         [HttpPost]
-        public async Task<IActionResult> Create(CreateCategoryDto dto)
+        public async Task<IActionResult> Create(CategoryCreateDto dto)
         {
             var category = await _categoryService.CreateAsync(dto);
             return Ok(category);
@@ -44,7 +44,7 @@ namespace InventoryManagement.Api.Controllers
 
         // PUT: api/categories/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, CreateCategoryDto dto)
+        public async Task<IActionResult> Update(int id, CategoryCreateDto dto)
         {
             var updated = await _categoryService.UpdateAsync(id, dto);
             if (!updated)

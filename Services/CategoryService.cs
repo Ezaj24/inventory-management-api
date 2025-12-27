@@ -13,7 +13,7 @@ public class CategoryService : ICategoryService
         _context = context;
     }
 
-    public async Task<Category> CreateAsync(CreateCategoryDto dto)
+    public async Task<Category> CreateAsync(CategoryCreateDto dto)
     {
         var category = new Category
         {
@@ -37,7 +37,7 @@ public class CategoryService : ICategoryService
         return await _context.Categories.FindAsync(id);
     }
 
-    public async Task<bool> UpdateAsync(int id, CreateCategoryDto dto)
+    public async Task<bool> UpdateAsync(int id, CategoryCreateDto dto)
     {
         var category = await _context.Categories.FindAsync(id);
         if (category == null) return false;

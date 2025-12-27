@@ -35,6 +35,9 @@ public class AppDbContext : DbContext
             .WithOne(i => i.Product)
             .HasForeignKey<InventoryItem>(i => i.ProductId);
 
+
+            
+
             
     }
 }

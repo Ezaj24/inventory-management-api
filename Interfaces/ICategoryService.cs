@@ -5,11 +5,11 @@ namespace InventoryManagement.Api.Interfaces;
 
 public interface ICategoryService
 {
-    Task<Category> CreateAsync(CreateCategoryDto dto);
+    Task<Category> CreateAsync(CategoryCreateDto dto);
     Task<List<Category>> GetAllAsync();
     Task<Category> GetByIdAsync(int id);
 
-    Task<bool> UpdateAsync(int id,CreateCategoryDto dto);
+    Task<bool> UpdateAsync(int id,CategoryCreateDto dto);
 
     Task<bool> DeleteAsync(int id);
 }

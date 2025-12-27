@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddScoped<ICategoryService,CategoryService>();
+builder.Services.AddScoped<IProductService, ProductService>();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(
