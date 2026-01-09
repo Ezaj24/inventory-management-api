@@ -46,7 +46,7 @@ Migrations
 
 ### Steps
 
-```bash
+`''bash
 docker compose up --build
 
 API will run on: http://localhost:8080
@@ -81,5 +81,5 @@ Ezaj Shaikh
 Backend .NET Developer
 
 
-----
+## ----
 
